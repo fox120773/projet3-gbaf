@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 //Connexion à la base de données
 require('src/bdd-connect.php');
 
@@ -46,8 +45,6 @@ if (isset($_POST['clic_envoi'])) {
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang=fr>
     <head>
@@ -60,11 +57,9 @@ if (isset($_POST['clic_envoi'])) {
     <body>
         <div id="bloc_page">
             <header>
-                
                     <div id="logo">
                         <img src="public/images/logo-gbaf.png" alt="Logo de G.B.A.F" />
-                    </div>
-                    
+                    </div>   
             </header>
             
             <hr>
@@ -97,8 +92,6 @@ if (isset($_POST['clic_envoi'])) {
                 <div id="inscription">
                  	<p class=pass-oublie >Si cela concerne votre première visite merci de vous rendre sur  : <a href="view/inscription.php">la page d'inscription</a></p><br/>
                 </div>
-
-
 
             </section>
             
