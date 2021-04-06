@@ -83,7 +83,7 @@ if (isset($_POST['clic_envoi'])) {
                	      
                	      <div id="message-erreur"> <?php if (isset($erreur)) { echo $erreur;} ?> </div>
 	                  
-	                  <form method="post" >
+	                    <form method="post" >
 
 							<table>
 								<tr>
@@ -109,7 +109,6 @@ if (isset($_POST['clic_envoi'])) {
 								<tr>
 									<td></td>
 									<td></td>
-									
 								</tr>
 								<tr>
 									<td class="alignement-table-formulaire" class="espace"><label for="question">Choisir parmis une question :</label></td>
@@ -128,14 +127,10 @@ if (isset($_POST['clic_envoi'])) {
 									<td class="alignement-table-formulaire"></td>
 									<td><input type="submit" value="Valider"  name="clic_envoi" id="clic_envoi"></td>
 								</tr>
-
 							</table>
 
-					</form> 
+					    </form> 
                 </div> 
-
-
-
 
 
             </section>
