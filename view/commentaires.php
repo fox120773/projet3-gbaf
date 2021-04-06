@@ -14,9 +14,6 @@ $req = $bdd->prepare('SELECT id, titre, contenu_long, url_logo, url_site FROM ac
 $req->execute(array('id' =>$_GET['id'] ));
 $donnees = $req->fetch();
 
-
-
-
 ?>
 
 
@@ -38,8 +35,7 @@ $donnees = $req->fetch();
 
             <section id="contenu-acteur">
 
-                        <div class="logo-contenu-acteur"><img alt="Logo acteur" src="<?php if (isset($_GET['id']) ) { echo $donnees['url_logo']; } else { header('Location:../view/accueil.php');} ?> " />
-                        </div>
+                        <div class="logo-contenu-acteur"><img alt="Logo acteur" src="<?php if (isset($_GET['id']) ) { echo $donnees['url_logo']; } else { header('Location:../view/accueil.php');} ?> " /> </div>
 
                         <div class="contenu-acteur">
                             <h3><a target="_blank" href="<?php if (isset($_GET['id']) AND $_GET['id'] >= 1 AND $_GET['id'] <= 6) { echo $donnees['url_site']; }  ?> " >
@@ -77,7 +73,7 @@ $donnees = $req->fetch();
                         </div>
                             
                         
-               </div>
+                </div>
 
 
                
