@@ -22,7 +22,7 @@ if (isset($_POST['clic_envoi'])) {
             $req->execute(array( 'identifiant'=>$identifiant ) );
             $resultat = $req->fetch();
 	     
-	        if ($resultat = $req->fetch())
+	        if ($resultat)
 	        {
 	        $erreur = " Cet identifiant (".$identifiant .") est déjas utilisé ";
 	        } 
