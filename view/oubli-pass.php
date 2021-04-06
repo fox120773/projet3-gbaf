@@ -55,26 +55,22 @@ if (isset($_POST['clic_envoi'])) {
             
             <section>
                <div id="titre-connexion"><h2>Mot de pass oublié</h2></div>
-               
-              
                 <div id="formulaire"> 
                	  <div id="message-erreur"> <?php if (isset($erreur)) { echo $erreur;} ?> </div>
                   <div id="info"><p>Merci de rentrer votre identifiant</p></div>
 
-	               <form method="post">
-						<table >
-							<tr>
-								<td class="alignement-table-formulaire"><label for="identifiant" >Identifiant :</label></td>
-								<td> <input type="text" name="identifiant" id="identifiant"></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td class="alignement-table-formulaire"><input type="submit" value="Valider"  name="clic_envoi" id="clic_envoi"></td>
-							</tr>
-						</table>  
-					</form> 
-
-
+        	        <form method="post">
+        						<table >
+        							<tr>
+        								<td class="alignement-table-formulaire"><label for="identifiant" >Identifiant :</label></td>
+        								<td> <input type="text" name="identifiant" id="identifiant"></td>
+        							</tr>
+        							<tr>
+        								<td></td>
+        								<td class="alignement-table-formulaire"><input type="submit" value="Valider"  name="clic_envoi" id="clic_envoi"></td>
+        							</tr>
+        						</table>  
+        					</form> 
 
                 </div> 
 
