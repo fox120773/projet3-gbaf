@@ -1,0 +1,443 @@
+
+/*GENERALE*/
+
+body{
+  font-family: Calibri, sans-serif;;
+}
+
+#bloc_page {
+    max-width: 900px;
+    margin: auto;
+   }
+
+
+p{
+  text-align: justify;
+}
+
+h1,h2,h3{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+
+
+
+/*  LE HEADER */
+header
+{
+  display: flex;
+  justify-content: space-between;
+   
+}
+
+#logo img{
+    width: 100px;
+}
+
+#logo a:hover{
+  border: 0px;
+ }
+
+
+
+
+
+/*PAGE CONNEXION*/
+#titre-connexion {
+ text-align: center;
+}
+
+#inscription {
+ text-align: center;
+ margin-top: 40px;
+}
+
+
+
+/* PAGE CONNEXION : formulaire pour la connexion */
+.alignement-table-formulaire {
+  text-align: right;
+}
+
+#formulaire , #form-inscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+    width: 650px;
+    height: 500px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border:1px solid #B0B0B0;
+    box-shadow:5px 5px 2px #C7C7C7;
+}
+
+
+#formulaire table {
+   display: flex;
+}
+
+#formulaire td , #form-inscription td {
+   padding-top: 20px;
+}
+
+#clic_envoi  {
+padding: 3px;
+font-size: 1em;
+border-radius: 5px;
+}
+
+#message-erreur{
+   color: red;
+   display: flex;
+}
+#message-validation{
+   color: green;
+   display: flex;
+}
+
+
+
+.pass-oublie {
+   text-align: left;
+   margin-top: 50px;
+}
+
+.pass-oublie a {
+  text-align: left;
+  text-decoration: none;
+  color: red;
+}
+
+.pass-oublie a:hover {
+  color: black;
+}
+
+
+
+
+
+
+
+/* PAGE ACCUEIL: section acteur*/
+
+article {
+border: 2px solid black;
+margin: 10px;
+}
+
+
+
+/* PAGE ACCUEIL : section présentation*/
+#banniere{
+  background-color: black;
+  color: #fff;
+  padding: 10px 10px 30px 10px;
+}
+
+#banniere-image img {
+width: 100%;
+  margin: auto;
+}
+
+#presentation-acteurs {
+  margin-left: 10px;
+}
+
+.acteur{
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: flex;
+  }
+
+.logo-acteur{
+  display: flex;
+  align-items: center;
+  width: 150px;
+
+}
+.logo-acteur img{
+  width: 150px;
+}
+
+.contenu{
+  width: 550px;
+  margin-left: 15px;
+}
+
+.contenu a{
+  color: red;
+  text-decoration :none;
+}
+
+.suite{
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.suite a {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+  height: 25px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid red;
+  border-radius: 8px;
+  }
+
+ .suite a:hover{
+  color: red;
+  border: 1px solid red;
+  border-radius: 8px;
+
+  }
+
+
+
+/*  PAGE HEADER : Menu sur avatar */
+#para-utilisateur{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+#menu-para{
+}
+
+#nom-prenom{
+    margin-left: 5px;
+}
+
+#menu-para img{
+   width: 60px;
+   float:right; 
+
+}
+
+
+#menu-para  nav ul {
+    list-style-type: none;
+    text-align: right;  
+}
+
+#menu-para nav ul li{
+    width: 270px;
+    text-align: right;
+
+}
+
+#menu-para nav ul li ul li a:hover{
+    color:#fff;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: red; 
+    padding: 3px;
+}
+
+#menu-para nav ul li ul li a{
+   width: 200px;
+   padding: 3px;
+   text-decoration: none; 
+}
+
+
+.sous{
+    display: none;
+    position: absolute;
+    padding: 3px;
+    z-index: 1000;
+}
+
+.sous a{
+    width: 150px;
+    display: block;
+    color: black;
+}
+.sous a:hover{
+    border-bottom: none;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+
+
+
+
+/* PAGE COMMENTAIRE : section acteur*/
+#contenu-acteur {
+  display: flex;
+  flex-direction: column;
+  height: 490px;
+  overflow: auto;
+ }
+
+
+.logo-contenu-acteur{
+   display: flex;
+  justify-content: center;
+ }
+
+
+.contenu-acteur  a{
+ color: black;
+text-decoration: none;
+ }
+
+.contenu-acteur  a:hover{
+  border: none;
+ }
+
+
+.logo-contenu-acteur img {
+     height:200px;
+
+ }
+ 
+
+
+/*PAGE COMMENTAIRE : section commentaires*/
+#conteneur-commentaires{
+ display: flex;
+ padding-left: 10px;
+}
+
+#bouton-commmantaires{
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+#bouton-commmantaires a{
+  width: 120px;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+#bouton-commmantaires a:hover{
+  color: red;
+}
+
+
+.les-commentaires{
+  width: 60%;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius : 10px;
+  margin-bottom: 10px;
+ }
+
+
+#like {
+  display: flex;
+  height: 50px;
+  width: 140px;
+  margin-left: 10px;
+  border: 0.2px solid black;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 1.8em;
+
+}
+
+
+#like{
+}
+
+
+
+
+
+
+
+
+/*LE FOOTER*/
+footer {
+display: flex;
+width: 100%;
+
+}
+
+.menu-titre1{
+  margin-right: 30px;
+}
+
+#menu-footer{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 30px;
+margin-top: 40px;
+background-color: red;
+ font-size: 1em;
+}
+
+#menu-footer a{
+  color:white;
+  text-decoration: none;
+}
+
+
+#menu-footer a:hover{
+  color:#000;
+
+}
+
+
+
+
+
+
+
+/*responsive design SMARTPHONE*/
+@media all and (max-width: 980px)
+{
+   body{
+   font-size: 0.8em;
+
+   }
+
+   header {
+     display: flex;
+      flex-direction: column;
+   }
+    
+    #para-utilisateur{
+      display: flex;
+      justify-content: center;
+      margin-right: 160px;
+    }
+    
+    #logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    #banniere h1{
+      font-size: 1.1em;
+    }
+
+}
