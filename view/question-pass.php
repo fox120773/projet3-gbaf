@@ -45,11 +45,9 @@ if (isset($_POST['clic_envoi'])) {
     <body>
         <div id="bloc_page">
             <header>
-                
                     <div id="logo">
                         <a href="accueil.php"><img src="../public/images/logo-gbaf.png" alt="Logo de G.B.A.F" /></a>
-                    </div>
-                    
+                    </div>   
             </header>
             
             <hr>
@@ -57,11 +55,10 @@ if (isset($_POST['clic_envoi'])) {
             <section>
                <div id="titre-connexion"><h2>Merci de bien vouloir répondre à la question</h2></div>
                
-              
                 <div id="formulaire"> 
                	  <div id="message-erreur"> <?php if (isset($erreur)) { echo $erreur;} ?> </div>
-
-	               <form method="post" >
+                  
+                   <form method="post">
                     <p><?php if (isset($_SESSION['question'])) { echo $_SESSION['question'];} ?></p>
 						<table >
 							<tr>
